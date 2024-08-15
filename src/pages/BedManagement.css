@@ -1,43 +1,81 @@
-.add-bed-btn {
-    padding: 10px 20px;
-    background-color: #1abc9c;
+/* src/pages/BedManagement.css */
+
+.bed-management {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+input {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 300px;
+}
+
+button {
+    padding: 10px 15px;
+    margin-right: 5px;
+    background-color: #007bff;
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    margin-bottom: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.add-bed-btn:hover {
-    background-color: #16a085;
+button:hover {
+    background-color: #0056b3;
 }
 
-.bed-table {
+button:active {
+    transform: scale(0.98);
+}
+
+table {
     width: 100%;
     border-collapse: collapse;
+    margin-top: 20px;
 }
 
-.bed-table th, .bed-table td {
+table th,
+table td {
     padding: 12px;
     border: 1px solid #ddd;
     text-align: left;
 }
 
-.bed-table th {
-    background-color: #2c3e50;
+table th {
+    background-color: #343a40;
     color: white;
 }
 
-.bed-table td button {
-    padding: 5px 10px;
-    background-color: #3498db;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-right: 5px;
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
 }
 
-.bed-table td button:hover {
-    background-color: #2980b9;
+tbody tr:hover {
+    background-color: #e9ecef;
+}
+
+@media (max-width: 768px) {
+    .bed-management {
+        padding: 10px;
+    }
+
+    input, button {
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+    }
+    
+    table {
+        font-size: 14px;
+    }
+}
+
+button:focus {
+    outline: 3px solid #0056b3;
+    outline-offset: 2px;
 }
