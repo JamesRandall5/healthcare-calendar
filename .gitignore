@@ -1,0 +1,69 @@
+# Node modules directory
+node_modules/
+
+# Build outputs
+build/
+dist/
+
+# Local environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE specific files
+.vscode/
+.idea/
+
+# Optional npm cache directory
+.npm
+.cache/
+
+# Coverage directory used by testing tools like Jest
+coverage/
+
+# Generated lock files
+package-lock.json
+yarn.lock
+
+# ESLint cache
+.eslintcache
+
+# Temporary files
+*.tmp
+*.swp
+
+# Storybook files (if using Storybook)
+.storybook/
+
+# Dependency directories
+.pnp/
+.pnp.js
+
+# Static files
+public/static/
+
+# Testing directories
+jest/
+__tests__/
+__mocks__/
+
+# Next.js specific (if using Next.js)
+.next/
+
+# React Native specific (if using React Native)
+.expo/
+.expo-shared/
+
+# Logs from running npm start
+npm-debug.log*
